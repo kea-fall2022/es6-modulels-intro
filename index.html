@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>Modules Demo</title>
+  <script src="./index.js" type="module"></script>
+</head>
+
+<body style="font-family: sans-serif">
+  <div style="margin-left: 10%;width: 75%;margin-right: auto">
+    <h2>JavaScript (ES6) Modules Demo</h2>
+    <div id="btns" style="margin-bottom: 1em;">
+      <button id="menu-btn-info">Info</button>
+      <button id="menu-btn-declare-variable">Create Variable</button>
+      <button id="menu-btn-use-variable">Use Variable</button>
+      <button id="menu-btn-show-all">Show all</button>
+      <button id="menu-btn-find-one">find one</button>
+      <button id="menu-btn-all-from-other-module">Play thing</button>
+    </div>
+    <hr />
+    <div id="content">
+
+      <div id="div-info" style="display:block">
+        <h2>What to learn from this example</h2>
+        <ul>
+          <li><b>JavaScript (ES6) Modules</b> <br />
+            Take this as part-1 in learning how to create nicely arranged and readable code</li>
+          <li>See why using Client Side Routing often makes sense</li>
+          <li><em>Observe this example can be run in a browser as is, no need (for you) to provide a backend</em></li>
+        </ul>
+      </div>
+
+      <!--Page for declare variable -->
+      <div id="div-declare-variable" style="display:none">
+        <h3>Declare a variable in a JavaScript Module (file)</h3>
+        <input id="input-text" />
+        <button id="btn-save-text">Save Text</button>
+        <h4 id="text"></h4>
+      </div>
+
+      <!--Page for use variable -->
+      <div id="div-use-variable" style="display:none">
+        <h3>Use Variable from other Module</h3>
+        <h4 id="text-from-other-module"></h4>
+      </div>
+
+
+      <!--Page for show all -->
+      <div id="div-show-all" style="display:none">
+        <h3>All users from jsonplaceholder.typicode.com</h3>
+        <button id="btn-get-all">Get all Users</button>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Username</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="tbl-body">
+          </tbody>
+        </table>
+      </div>
+
+      <!--Page for find one -->
+      <div id="div-find-one" style="display: none;">
+        <h3>Find a single User</h3>
+        <label for="text-for-id">Id</label>&nbsp;<input id="text-for-id" />
+        <button id="btn-find-one">Find</button>
+        <p id="user-info">All data for User Stringified into a Json String</p>
+      </div>
+
+      <!--Page To play arround with in class -->
+      <div id="div-all-from-other-module" style="display: none;">
+        <h3>Get all users, not via a <code>fetch</code> call, but from another module</h3>
+        <button id="btn-users-from-other">Get Users From Other Module</button>
+        <p id="p-for-users">Show users here</p>
+      </div>
+    </div>
+</body>
+
+</html>
