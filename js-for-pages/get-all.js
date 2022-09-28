@@ -1,9 +1,8 @@
 const URL = "https://jsonplaceholder.typicode.com/users/"
 
 let allUsers = []
-if (allUsers.length === 0) {
-  allUsers = await showAll()
-}
+allUsers = showAll()
+
 
 export function getAllUsers(){
   return allUsers
